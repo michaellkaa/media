@@ -1,0 +1,52 @@
+body {
+    background-color: #CBE2DE;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.div-color {
+    height: 300px;
+    width: 300px;
+    background: #2A4494;
+    margin: 0 auto;
+    padding: 50px 50px;
+}
+
+.tablet, .mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media screen and (max-width: 1024px) {
+    .tablet {
+        display: block;
+        background: #2e5a50;
+    }
+
+    .desktop, .mobile {
+        display: none;
+    }
+
+    body {
+        background-color: #4870eb;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .desktop, .tablet {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        background-color: #295458;
+    }
+
+    body {
+        background-color: #77dfcc;
+        
+    }
+}
